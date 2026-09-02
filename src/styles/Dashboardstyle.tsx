@@ -91,12 +91,14 @@ export default StyleSheet.create({
         letterSpacing: 0,
     },
     viewDevicesText: {
-        marginTop: 'auto',
-        paddingTop: 18,
-        alignSelf: 'center',
         color: '#000000',
         fontSize: 25,
         fontWeight: '800',
         letterSpacing: 0,
+    },
+    viewDevicesButton: {
+        marginTop: 'auto',
+        paddingTop: 18,
+        alignSelf: 'center',
     },
 });
