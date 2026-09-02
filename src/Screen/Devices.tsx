@@ -26,7 +26,7 @@ export default function Devices() {
 						<Text style={styles.location}>Living Room</Text>
 					</View>
 
-					<Text style={styles.status}>24°C</Text>
+					<Text style={styles.status}>20°C</Text>
 				</View>
 			</View>
 		</SafeAreaView>
