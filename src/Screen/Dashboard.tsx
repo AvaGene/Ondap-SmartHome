@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import styles from "../styles/Dashboardstyle";
@@ -9,6 +9,9 @@ export default function Dashboard() {
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.title}>Smart Home</Text>
+          <Pressable style={styles.settingsButton}>
+            <Text style={styles.settingsButtonText}>Settings</Text>
+          </Pressable>
         </View>
 
         <View style={styles.temperature}>

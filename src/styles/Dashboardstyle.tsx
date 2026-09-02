@@ -12,14 +12,28 @@ export default StyleSheet.create({
         paddingBottom: 18,
     },
     header: {
+        flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         minHeight: 64,
     },
     title: {
         color: '#000000',
         fontSize: 34,
         fontWeight: '900',
+        letterSpacing: 0,
+    },
+    settingsButton: {
+        borderWidth: 2,
+        borderColor: '#000000',
+        borderRadius: 12,
+        paddingHorizontal: 14,
+        paddingVertical: 10,
+    },
+    settingsButtonText: {
+        color: '#000000',
+        fontSize: 16,
+        fontWeight: '800',
         letterSpacing: 0,
     },
     temperature: {
