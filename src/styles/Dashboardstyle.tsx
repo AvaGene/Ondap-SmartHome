@@ -1,9 +1,88 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+    safeArea: {
+        flex: 1,
+        backgroundColor: '#f4f4f4',
+    },
     container: {
         flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-    }
-})
+        paddingHorizontal: 24,
+        paddingTop: 24,
+        paddingBottom: 18,
+    },
+    header: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: 64,
+    },
+    title: {
+        color: '#000000',
+        fontSize: 34,
+        fontWeight: '900',
+        letterSpacing: 0,
+    },
+    temperature: {
+        flex: 1,
+        minHeight: 300,
+        marginTop: 16,
+        marginBottom: 16,
+        borderWidth: 2,
+        borderColor: '#000000',
+        borderRadius: 28,
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 24,
+    },
+    temp: {
+        color: '#000000',
+        fontSize: 72,
+        fontWeight: '900',
+        letterSpacing: 0,
+    },
+    location: {
+        marginTop: 12,
+        color: '#000000',
+        fontSize: 28,
+        fontWeight: '800',
+        letterSpacing: 0,
+    },
+    deviceRow: {
+        flexDirection: 'row',
+        gap: 16,
+        minHeight: 128,
+        marginBottom: 16,
+    },
+    card: {
+        flex: 1,
+        borderWidth: 2,
+        borderColor: '#000000',
+        borderRadius: 24,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingHorizontal: 8,
+        paddingVertical: 16,
+    },
+    cardTitle: {
+        color: '#000000',
+        fontSize: 25,
+        fontWeight: '800',
+        letterSpacing: 0,
+    },
+    cardStatus: {
+        marginTop: 10,
+        color: '#000000',
+        fontSize: 20,
+        fontWeight: '800',
+        letterSpacing: 0,
+    },
+    viewDevicesText: {
+        marginTop: 'auto',
+        paddingTop: 18,
+        alignSelf: 'center',
+        color: '#000000',
+        fontSize: 25,
+        fontWeight: '800',
+        letterSpacing: 0,
+    },
+});
