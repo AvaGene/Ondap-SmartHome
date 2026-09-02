@@ -13,8 +13,21 @@ export default StyleSheet.create({
 	},
 	header: {
 		minHeight: 64,
-		justifyContent: "center",
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "space-between",
 		marginBottom: 16,
+	},
+	backButton: {
+		width: 48,
+		height: 48,
+		alignItems: "center",
+		justifyContent: "center",
+	},
+	backButtonText: {
+		color: "#000000",
+		fontSize: 28,
+		fontWeight: "900",
 	},
 	title: {
 		color: "#000000",
@@ -23,13 +36,12 @@ export default StyleSheet.create({
 		letterSpacing: 0,
 	},
 	device: {
-		minHeight: 112,
-		marginBottom: 16,
+		minHeight: 76,
 		paddingHorizontal: 20,
-		paddingVertical: 18,
 		borderWidth: 2,
 		borderColor: "#000000",
 		borderRadius: 24,
+		marginBottom: 16,
 		flexDirection: "row",
 		alignItems: "center",
 		justifyContent: "space-between",
@@ -37,19 +49,6 @@ export default StyleSheet.create({
 	deviceName: {
 		color: "#000000",
 		fontSize: 25,
-		fontWeight: "800",
-		letterSpacing: 0,
-	},
-	location: {
-		marginTop: 8,
-		color: "#000000",
-		fontSize: 18,
-		fontWeight: "600",
-		letterSpacing: 0,
-	},
-	status: {
-		color: "#000000",
-		fontSize: 20,
 		fontWeight: "800",
 		letterSpacing: 0,
 	},

@@ -1,10 +1,12 @@
+import { useRouter } from "expo-router";
 import { useState } from "react";
-import { Switch, Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import styles from "../styles/Settingsstyle";
 
 export default function Settings() {
+  const router = useRouter();
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
 
   return (
@@ -12,21 +14,20 @@ export default function Settings() {
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.title}>Settings</Text>
+          <Pressable
+            style={styles.backButton}
+            onPress={() => router.replace("/")}
+          >
+            <Text style={styles.backButtonText}>&gt;</Text>
+          </Pressable>
         </View>
 
         <View style={styles.settingRow}>
-          <Text style={styles.settingText}>Notifications</Text>
-          <Switch
-            value={notificationsEnabled}
-            onValueChange={setNotificationsEnabled}
-            trackColor={{ false: "#767577", true: "#000000" }}
-            thumbColor="#f4f4f4"
-          />
+          <Text style={styles.settingText}>...</Text>
         </View>
 
         <View style={styles.settingRow}>
-          <Text style={styles.settingText}>Temperature Unit</Text>
-          <Text style={styles.valueText}>°C</Text>
+          <Text style={styles.settingText}>...</Text>
         </View>
       </View>
     </SafeAreaView>

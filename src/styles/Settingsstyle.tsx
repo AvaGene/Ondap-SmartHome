@@ -13,8 +13,21 @@ export default StyleSheet.create({
 	},
 	header: {
 		minHeight: 64,
-		justifyContent: "center",
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "space-between",
 		marginBottom: 16,
+	},
+	backButton: {
+		width: 48,
+		height: 48,
+		alignItems: "center",
+		justifyContent: "center",
+	},
+	backButtonText: {
+		color: "#000000",
+		fontSize: 28,
+		fontWeight: "900",
 	},
 	title: {
 		color: "#000000",

@@ -98,7 +98,11 @@ export default StyleSheet.create({
     },
     viewDevicesButton: {
         marginTop: 'auto',
-        paddingTop: 18,
+        paddingHorizontal: 18,
+        paddingVertical: 12,
         alignSelf: 'center',
+        borderWidth: 2,
+        borderColor: '#000000',
+        borderRadius: 16,
     },
 });
